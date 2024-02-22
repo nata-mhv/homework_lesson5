@@ -14,7 +14,7 @@ def test_element_tests():
     browser.element('.react-datepicker__day--014').click()
     browser.element('#subjectsInput').type('Maths').press_enter()
     browser.element('[value="3"]').perform(command.js.click)
-    browser.element('#uploadPicture').send_keys(os.path.abspath('pic1.jpeg'))
+    browser.element('#uploadPicture').send_keys(os.path.abspath('tests/pic1.jpeg'))
     browser.element('#currentAddress').type('MNE, Budva')
     browser.element('#react-select-3-input').type('Haryana').press_enter()
     browser.element('#react-select-4-input').type('Panipat').press_enter()
