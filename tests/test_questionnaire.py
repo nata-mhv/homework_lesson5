@@ -1,10 +1,9 @@
 from selene import browser, have, command, by
 import os
 
-def test_element_tests(browser_open):
-    browser.open('/')
-    browser.element('#firstName').perform(command.js.scroll_into_view)
-    browser.element('#firstName').type('Name')
+def test_element_tests():
+    browser.open('/automation-practice-form')
+    browser.element('#firstName').perform(command.js.scroll_into_view).type('Name')
     browser.element('#lastName').type('Surname')
     browser.element('#userEmail').type('aaaa@aa.com')
     browser.element('[value="Female"]').perform(command.js.click)
